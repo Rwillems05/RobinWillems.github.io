@@ -1,16 +1,502 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
+   <head>
+      <!-- Head, In de head hebben we de link van de css veranderd zodat het verbonden is met een style.css bestand, verder hebben we de titel van de website aangepast. Als laatste hebben we nog een favicon toegevoegd.-->
+      <title> Junkfoodprijzen </title>
+      <link rel="icon" href="Images/favicon.png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <style>
+      body {
+         font: 20px Montserrat, sans-serif;
+         line-height: 1.8;
+         color: #f5f6f7;
+         }
 
- 	<head>
-   		<title>Hoofdstuk 3 opdracht 3</title>
-</head>
+         p {font-size: 16px;}
+         .margin {margin-bottom: 45px;}
+         .bg-1 { 
+         background-color: #9C1717; /* Darker red */
+         color: #ffffff;
+         }
 
+         .bg-2 { 
+         background-color: #C12C2C; /* Red */
+         color: #ffffff;
+         }
 
-<body>
- 		Dit is een geweldig filmpje
-		
-	</body>
+         .bg-3 { 
+         background-color: #D94E4E; /* Light Red */
+         color: #ffffff;
+         }
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_OBlgSz8sSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         .bg-4 { 
+         background-color: #2f2f2f; /* Black Gray */
+         color: #ffffff;
+         }
+
+         .container-fluid {
+         padding-top: 70px;
+         padding-bottom: 70px;
+         }
+
+         .navbar {
+         padding-top: 15px;
+         padding-bottom: 15px;
+         border: 0;
+         border-radius: 0;
+         margin-bottom: 0;
+         font-size: 12px;
+         letter-spacing: 5px;
+         }
+
+         .navbar-nav  li a:hover {
+         color: #A83B3B !important;
+         }
+      </style>
+   </head>
+
+   <body>
+      <!-- Navbar, De navbar hebben we grotendeels opnieuw gedaan omdat de navbar van de template niet werkte, ook hebben we de tekst/plek waar de knop naar toe gaat aangepast, ook de naam van de buttons zijn veranderd.-->
+      <nav class="navbar navbar-default">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>                       
+               </button>
+               <a class="navbar-brand" href="#one">JUNKFOODPRIJZEN</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a id="sec-1" href="#one">Over ons</a></li>
+                  <li><a id="sec-2" href="#two">McDonalds</a></li>
+                  <li><a id="sec-3" href="#three">KFC</a></li>
+                  <li><a id="sec-4" href="#four">Burgerking</a></li>
+                  <li><a id="sec-5" href="#five">Populair</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <!-- First Container, In deze container hebben we een titel en tekst toegevoegd, ook hebben we een png image togevoegd zodat de achtergrond doorzichtig is, ook is de image responsive. -->
+      <div id="one" class="container-fluid bg-1 text-center">
+         <h3 class="margin">Junkfoodprijzen</h3>
+         <img src="Images/Junkfood1.png" class="img-responsive" alt="Junkfoodprijzen" width="3000" height="500">
+         <h3>Op deze website zie je de prijzen en het assortiment van verschillende Foodketens die zich in Nederland bevinden. Op deze website vind je de prijzen van; Mcdonalds, KFC en BurgerKing </h3>
+      </div>
+
+      <!-- Second Container, In deze container hebben we de titel veranderd en verschillende nieuwe lijsten en kolommen toegevoegd., ook hebben we de search button veranderd naar een 'back up' button. -->
+      <div id="two" class="container-fluid bg-2 text-center">
+         <h3 class="margin">McDonalds</h3>
+         <div class="col-sm-4" STYLE="text-align: left;">
+
+            <p>
+            <ul>
+               Voordeelmenu's
+               <li>Chicken McNuggets 9 €6,25
+               <li>Filet-o-Fish €6,25
+               <li>McChicken €6,25
+               <li>Quarter Pounder €6,25
+               <li>Big Mac €6,75
+               <li>Chicken Sensation €7,00
+               <li>Big Tasty met bacon €7,25
+               <li>McWrap honing-Mosterd €7,00
+               <li>Grilled Chicken Salad - Sweet & Spicy Voordeelmenu €5,95
+               <li>Groot menu (plus prijs) €0,75
+               <li>Bacon 'n Cheese Salad Voordeelmenu €5,95
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               McWraps 
+               <li>Grote McWrap Honing-Mosterd€ 3,95 
+               <li>Kleine McWrap €2,25
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Happy Meal 
+               <li>Happy Meal Hamburger €4,20 
+               <li>Los Happy Meal doosje met verassing€ 1,75 
+               <li>Happy Meal McFish €4,20 
+               <li>Happy Meal Cheeseburger €4,20 
+               <li>Happy Meal Chicken McNuggets 4 €4,20
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Franse frietjes 
+               <li>Sweet Potatoes Medium €2,40 
+               <li>Friet klein €2,10 
+               <li>Friet middel €2,25 
+               <li>Friet groot €2,70 
+               <li>Frietsaus of Ketchup €0,60 
+               <li>Chicken McNuggets saus €0,60 
+               <li>Sweet Potatoes Groot €2,90
+            </ul>
+            <p> 
+
+            <p>
+            <ul>
+               Ontbijt 
+               <li>McMuffin€ 1,95 
+               <li>Croissant (jam & boter) €1,95 
+               <li>Pancakes met stroop €1,95 
+               <li>Ontbijtproduct + drankje €2,95     
+            </ul>
+            <p>
+
+         </div>
+         <div class="col-sm-4" STYLE="text-align: left;">
+
+            <p>
+            <ul>
+               Burgers en McNuggets
+               <li>Big mac €3,45
+               <li>Quarter Pounder €3,45
+               <li>McChicken €3,25
+               <li>Filet-O-Fish €2,00
+               <li>Chicken Sensation €3,75
+               <li>Big Tasty met bacon €6,95
+               <li>Hamburger €1,75
+               <li>Cheeseburger €1,50
+               <li>McKroket €2,45
+               <li>Chicken McNuggets 6 st. €2,00
+               <li>Chicken McNuggets 9 st. met 2 sausjes €3,75
+               <li>Chicken McNuggets 20 st. met 3 sausjes €6,95
+               <li>Crispy shrimps met chili dip €2,50
+               <li>Chili chicken €2,00
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Dranken 
+               <li>Innocent Smoothie €1,95 
+               <li>Tropicana Appelsap €1,95 
+               <li>Tropicana Jus d’Orange €1,95 
+               <li>Biologische Halfvolle Melk €1,95 
+               <li>Fristi €1,95 
+               <li>Chocomel €1,95 
+               <li>Spa 33cl €1,75 
+               <li>Spa 50cl €2,10 
+               <li>Coca-Cola €2,10 
+               <li>Coca-Cola Zero Sugar €2,10 
+               <li>Coca-Cola Light €2,10 
+               <li>Sprite €2,00 
+               <li>Lipton Ice Tea €2,25 
+               <li>Fanta €2,50 
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Los 
+               Vers fruit €1,50 
+               <li>Snoeptomaatjes €1,50 
+               <li>Danoontje €1,50 
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Cookies 
+               <li>White Chocolate Raspberry Cookie €1,75 
+               <li>Triple Chocolate Cookie €1,75 
+            </ul>
+            <p>
+          
+
+         </div>
+         <div class="col-sm-4" STYLE="text-align: left;">
+
+            <p>
+            <ul>
+               Ijs & milk shakes 
+               <li>McFlurry Strawberry Cheesecake met Aardbeiensaus €2,95 
+               <li>Sundae Karamel €1,80 
+               <li>Ijshoorn €1,00 
+               <li>Milk Shake Banaan €2,40 
+               <li>Milk Shake Vanille €2,40 
+               <li>Milk Shake Aardbei €2,40 
+               <li>Iced Fruit Smoothie Mango & Ananas €2,85 
+               <li>Iced Fruit Smoothie Aardbei & Banaan €2,85 
+               <li>Iced Frappé Witte Chocolade Framboos €2,95 
+               <li>Iced Frappé Caramel €2,95 
+               <li>Lemonade €2,85 
+               <li>Milk Shake Chocolade €2,40 
+               <li>McFlurry Karamel Zeezout met Karamelsaus €2,95 
+               <li>McFlurry M&M's Pinda €2,95 
+               <li>McFlurry Oreo met Chocoladesaus €2,95 
+               <li>Sundae Chocolade €2,10 
+               <li>Sundae Aardbei met krokante muesli €3,50 
+               <li>Yoghurt met krokante muesli €3,25 
+            </ul>
+            <p>    
+
+            <p>
+            <ul>
+               Koffie 
+               <li>Thee €1,95 
+               <li>Thee groot €2,25 
+               <li>Cappuchino €2,00 
+               <li>Hot Choco €2,25 
+               <li>Hot Choco groot €2,65 
+               <li>Espresso €1,25 
+               <li>Dubbele espresso €1,65 
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Salades 
+               <li>Grilled Chicken Salad - Sweet & Spicy €4,95 
+               <li>Bacon 'n Cheese Salad €4,95 
+               <li>Bacon 'n Cheese Salad €4,95 
+               <li>Side Salad €4,95    
+            </ul>
+            <p> 
+         </div>
+
+         <a href="#" class="btn btn-default btn-lg">
+         <span class=" "></span> Back up
+         </a>
+
+      </div>
+      <!-- Second v2 Container, Als eerst hebben we deze container gemaakt door het te dupliceren van de eerste container, verder hebben we in deze container de titel veranderd en verschillende nieuwe lijsten en kolommen toegevoegd., ook hebben we de search button veranderd naar een 'back up' button.-->
+      <div id="three" class="container-fluid bg-2 text-center">
+         <h3 class="margin">KFC</h3>
+         <div class="col-sm-4" STYLE="text-align: left;">
+
+            <p>
+            <ul>
+               Meals 
+               <li>2 Piece + frites + frisdrank €5,95 
+               <li>6 Hot Wings + frites + frisdrank €6,25 
+               <li>6 Filet Bites (incl. dip) + frites + frisdrank €6,25
+               <li>Filet Burger + frites + frisdrank €5,95 
+               <li>Zinger burger + frites + frisdrank €5,95 
+               <li>Brazer + coleslaw + Pepsi max €6,45 
+               <li>Twister + frites + frisdrank €6,75 
+               <li>Filet Tower burger + frites + frisdrank €6,75 
+               <li>Zinger Tower burger + frites + frisdrank €6,75 
+               <li>Grilled chicken salad + halve maïs + sourcy blauw €6,45 
+               <li>Filet Bites salad + frites + frisdrank €6,45 
+               <li>9 Filet Bites+ frites + frisdrank €7,45 
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Bij je menu per stuk 
+               <li>Coleslaw €1,25 
+               <li>Halve maïskolf €1,25 
+               <li>Frites €1,25 
+               <li>Kleine salade €1,25 
+            </ul>
+            <p>
+
+         </div>
+         <div class="col-sm-4" STYLE="text-align: left;">
+
+            <p>
+            <ul>
+               Buckets 
+               Variety bucket 
+               <li>3 kipstukken + 6 hot wings + 4 crispy strips + 2 frites + 2 coleslaw €14,95 
+                  Party bucket 
+               <li>33 hot wings + 4 frites €22,95 
+                  Family bucket 
+               <li>9 kipstukken + 16 hot wings + 4 frites + 4 halve maïskolven + 4 coleslaw €29,95 
+               <li>9 kipstukken €14,95 
+               <li>12 kipstukken €18,95 
+               <li>15 kipstukken €22,95 
+               <li>21 kipstukken €29,95 
+               <li>27 hot wings €15,95 
+               <li>36 hot wings €19,95 
+               <li>45 hot wings €23,95 
+               <li>63 hot wings €29,95 
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Burgers & Wraps 
+               <li> Krispy Burger €3,75 
+               <li>Filet Burger €3,75 
+               <li>Zinger Burger €3,75 
+               <li>Twister €4,55 
+               <li>Zinger Tower €4,55 
+               <li>Filet Tower €4,55
+            </ul>
+            <p>
+
+         </div>
+         <div class="col-sm-4" STYLE="text-align: left;">
+
+            <p>
+            <ul>
+               Boxed Meals 
+               Burger box 
+               <li>1 Filet burger + 2 hot wings + 1 frites  + 1 coleslaw + 1 frisdrank €8,65 
+                  3 Piece Box 
+               <li>3 kipstukken + 1 frites  + 1 coleslaw + 1 frisdrank €8,65 
+                  9 Hot Wings Box 
+               <li>9 hot wings + 1 frites + 1 coleslaw + 1 frisdrank €8,65 
+                  Variety Box 
+               <li>3 hot wings + 1 kipstuk + 1 frites + 1 coleslaw + 1 frisdrank €8,65 
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Snacks 
+               <li>Chicken Original 1 stuk €2,00 
+               <li>Chicken Original 2 stuk €3,75 
+               <li>Chicken Original 5 stuk €8,95 
+               <li>3 Hot Wings €2,25 
+               <li>6 Hot Wings €4,05 
+               <li>9 Hot Wings €5,75 
+               <li>3 Crispy Strips (incl. dip) €3,95 
+               <li>6 Filet Bites €4,05 
+               <li>9 Filet Bites €5,75 
+               <li>15 Filet Bites €8,95 
+               <li>20 Filet Bites €11,45 
+               <li>Smart Snackbox €2,00 
+               <li>Smart Snackbox 2 €2,00 
+               <li>Snackbox €2,45 
+            </ul>
+            <p>
+         </div>
+
+         <a href="#" class="btn btn-default btn-lg">
+         <span class=" "></span> Back up
+         </a>
+      </div>
+
+      <!-- Second v3 Container,Als eerst hebben we deze container gemaakt door het te dupliceren van de eerste container, verder hebben we in deze container de titel veranderd en verschillende nieuwe lijsten en kolommen toegevoegd., ook hebben we de search button veranderd naar een 'back up' button. -->
+      <div id="four" class="container-fluid bg-2 text-center">
+         <h3 class="margin">Burgerking</h3>
+         <div class="col-sm-4" STYLE="text-align: left;">
+
+            <p>
+            <ul>
+               King Menu’s 
+               <li>King Nuggets €5,95 
+               <li>King Wings €5,95 
+               <li>King Shrimps €5,95 
+               <li>Whopper Menu €5,95 
+               <li>Grilled Chicken Wrap €5,95 
+               <li>Groot menu €0,60 extra 
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Dranken 
+               <li>Spa 50cl €1,95 
+               <li>Frisdrank Medium €1,75 
+               <li>Frisdrank Large	€1,95 
+               <li>Frisdrank King €2,15 
+               <li>Orange Juice €1,50 
+            </ul>
+            <p>
+         </div>
+
+         <div class="col-sm-4" STYLE="text-align: left;">
+
+            <p>
+            <ul>
+               IJs en desserts 
+               <li>Sundae IJs €2,00 
+               <li>Hot Brownie / Blondie €2,50
+               <li>Softijs €0,75 
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Burgers	 
+               <li>Whopper € 3,50 
+               <li>Dubbele Whopper €3,50 
+               <li>Triple Whopper €2,25 
+               <li>Big King XXL €4,75 
+               <li>Long Chicken €3,50 
+               <li>Fish King €2,95 
+               <li>Cheeseburger €1,75 
+            </ul>
+            <p>
+         </div>
+
+         <div class="col-sm-4" STYLE="text-align: left;">
+
+            <p>
+            <ul>
+               Milkshakes 
+               <li>Milkshake Medium €1,75 
+               <li>Milkshake Large €2,00 
+               <li>Milkshake King	€2,25 
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               King Fries 
+               <li>Medium €1,50 
+               <li>Large €1,75 
+               <li>King €2,00 
+               <li>Fritessaus / ketchup €0,60
+            </ul>
+            <p>
+
+            <p>
+            <ul>
+               Kids Menu 
+               <li>Hamburger Menu €3,45 
+               <li>Cheeseburger Menu €3,45 
+               <li>King Nuggets Menu €3,45 
+            </ul>
+            <p>
+         </div>
+
+         <a href="#" class="btn btn-default btn-lg">
+         <span class=" "></span> Back up
+         </a>
+      </div>
+
+      <!-- Third Container, In deze container hebben we verschillende responsive png images, kolommen en tekst toevoegd ook hebben we van een stukje tekst een hyperlinkref gemaakt om te verwijzen naar een website, ook hebben we de afbeeldingen een alternatieve naam gegeven.-->
+      <div id="five" class="container-fluid bg-3 text-center">
+         <h3 class="margin">Populaire producten</h3>
+         <br>
+         <div class="row">
+            <div class="col-sm-4">
+               <p> McFlurry Oreo: knapperige stukjes Oreo en een heerlijke chocoladesaus! Wist je dat je de saus van je McFlurry kunt wisselen? Probeer 'm eens met aardbeiensaus of karamelsaus!(Image:<a href="https://www.mcdonalds.com/nl/nl-nl.html">www.mcdonalds.nl</a>)</p>
+               <img src="Images/mcflurry1.png" class="img-responsive margin" style="width:100%" alt="Mcflurry">
+            </div>
+            <div class="col-sm-4">
+               <p>De WHOPPER®: Deze burger heeft eigenlijk geen uitleg nodig. Zodra je tanden in het versgeroosterde sesambroodje zinken en je de unieke BBQ-smaak van de Flame-Grilled burger proeft, snap je waarom de WHOPPER® onze concurrenten al sinds 1957 tot waanzin drijft. (Image:<a href="https://www.burgerking.nl">www.burgerking.nl</a>)</p>
+               <img src="Images/whopper1.png" class="img-responsive margin" style="width:100%" alt="Whopper">
+            </div>
+            <div class="col-sm-4">
+               <p>Chickn' share: Heerlijk, kip aan het bot, van buiten gepaneerd maar mals van binnen. Deel de Chick‘n Share met je vrienden - er is meer dan genoeg! Gaan jullie voor de 6 pcs Original, toch de 16 perfect gekruide krokante Hot Wings of 10 Crispy Tenders? (Image:<a href="https://www.kfc.nl">www.kfc.nl</a>)</p>
+               <img src="Images/kfcbucket1.png" class="img-responsive margin" style="width:100%" alt="Bucket">
+            </div>
+         </div>
+      </div>
+
+      <!-- Footer, In de footer hebben we alleen onze namen toegevoegd -->
+      <footer class="container-fluid bg-4 text-center">
+         <p>Bootstrap template die gebruikt is <a href="https://www.w3schools.com/bootstrap/bootstrap_theme_me.asp">(Klik hier)</a></p>
+         <p> Website gemaakt voor informatica door Robin Willems & Luka Lippinkhof (Sg WereDi) </p>
+      </footer>
+
+   </body>
 </html>
